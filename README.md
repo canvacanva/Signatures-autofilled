@@ -77,7 +77,7 @@ echo $ROAMING_undercase
 
 ####################################Set AREA DEFAULT
 
-$PathSignatureTemplates = "\\corp.amergroup.it\svc\group\app_deploy_group\M365\Signatures\$CompFolder"
+$PathSignatureTemplates = "\\corp.companygroup.it\svc\group\app_deploy_group\M365\Signatures\$CompFolder"
 
 
 ####################################Set FUNCTION
@@ -87,122 +87,122 @@ $PathSignatureTemplates = "\\corp.amergroup.it\svc\group\app_deploy_group\M365\S
 
 if ($function -match "exhibition_1" )
 {
-$URL_lower = "https://signatures.amergroup.it/lower-banner/$CompFolder.png"
-$URL_upper = "https://signatures.amergroup.it/upper-banner/$CompFolder.png"
-$URL_mid = "https://signatures.amergroup.it/exh1/$CompFolder.png"
-$URL_last = "https://signatures.amergroup.it/last-banner/$CompFolder.png"
+$URL_lower = "https://signatures.companygroup.it/lower-banner/$CompFolder.png"
+$URL_upper = "https://signatures.companygroup.it/upper-banner/$CompFolder.png"
+$URL_mid = "https://signatures.companygroup.it/exh1/$CompFolder.png"
+$URL_last = "https://signatures.companygroup.it/last-banner/$CompFolder.png"
 }
 
 if ($function -match "exhibition_2" )
 {
-$URL_lower = "https://signatures.amergroup.it/lower-banner/$CompFolder.png"
-$URL_upper = "https://signatures.amergroup.it/upper-banner/$CompFolder.png"
-$URL_mid = "https://signatures.amergroup.it/exh2/$CompFolder.png"
-$URL_last = "https://signatures.amergroup.it/last-banner/$CompFolder.png"
+$URL_lower = "https://signatures.companygroup.it/lower-banner/$CompFolder.png"
+$URL_upper = "https://signatures.companygroup.it/upper-banner/$CompFolder.png"
+$URL_mid = "https://signatures.companygroup.it/exh2/$CompFolder.png"
+$URL_last = "https://signatures.companygroup.it/last-banner/$CompFolder.png"
 }
 
 if ($function -eq $null )
 {
 $function = "signature"
-$URL_lower = "https://signatures.amergroup.it/lower-banner/$CompFolder.png"
-$URL_upper = "https://signatures.amergroup.it/upper-banner/$CompFolder.png"
-$URL_mid = "https://signatures.amergroup.it/mid-banner/$CompFolder.png"
-$URL_last = "https://signatures.amergroup.it/last-banner/$CompFolder.png"
+$URL_lower = "https://signatures.companygroup.it/lower-banner/$CompFolder.png"
+$URL_upper = "https://signatures.companygroup.it/upper-banner/$CompFolder.png"
+$URL_mid = "https://signatures.companygroup.it/mid-banner/$CompFolder.png"
+$URL_last = "https://signatures.companygroup.it/last-banner/$CompFolder.png"
 }
 echo $URL_lower
 
 
 ####################################Set TERMS AND CONDITION FOR COM
-if ($CompFolder -match "aem" )
+if ($CompFolder -match "company_4" )
 {
-    $TeC = "https://www.amer.it"
+    $TeC = "https://www.company_1.it"
 }
 
-if ($CompFolder -match "amer" )
+if ($CompFolder -match "company_1" )
 {
-    $TeC = "https://www.amer.it/sites/default/files/2020-10/sales-conditions_amer2020_en.pdf"
+    $TeC = "https://www.company_1.it/sites/default/files/2020-10/sales-conditions_company_12020_en.pdf"
 }
 
-if ($CompFolder -match "antamatic" )
+if ($CompFolder -match "company_5" )
 {
-    $TeC = "https://www.amer.it"
+    $TeC = "https://www.company_1.it"
 }
 
-if ($CompFolder -match "bus" )
+if ($CompFolder -match "company_6" )
 {
-    $TeC = "https://www.amer.it"
+    $TeC = "https://www.company_1.it"
 }
 
-if ($CompFolder -match "italsea" )
+if ($CompFolder -match "company_3" )
 {
-    $TeC = "https://www.italseasrl.it/sites/default/files/2021-06/sales-conditions-italsea2020-en.pdf"
+    $TeC = "https://www.company_3srl.it/sites/default/files/2021-06/sales-conditions-company_32020-en.pdf"
 }
 
-if ($CompFolder -match "nsm-india" )
+if ($CompFolder -match "company_7" )
 {
-    $TeC = "https://www.amer.it"
+    $TeC = "https://www.company_1.it"
 }
 
-if ($CompFolder -match "sir" )
+if ($CompFolder -match "company_2" )
 {
-    $TeC = "https://www.siractuators.com/sites/default/files/2021-06/sales-conditions-sir.pdf"
+    $TeC = "https://www.company_2actuators.com/sites/default/files/2021-06/sales-conditions-company_2.pdf"
 }
 
-if ($CompFolder -match "schumo" )
+if ($CompFolder -match "company_8" )
 {
-    $TeC = "https://www.amer.it"
+    $TeC = "https://www.company_1.it"
 }
 
-if ($CompFolder -match "nsm" )
+if ($CompFolder -match "company_9" )
 {
-    $TeC = "https://www.nsmsrl.it/sites/default/files/2019-11/nsm-general-conditions-of-sale.pdf"
+    $TeC = "https://www.company_9srl.it/sites/default/files/2019-11/company_9-general-conditions-of-sale.pdf"
 }
 
 
 ####################################Set Quality Declaration Link
-if ($CompFolder -match "aem" )
+if ($CompFolder -match "company_4" )
 {
-    $QDL = "https://www.amer.it/download"
+    $QDL = "https://www.company_1.it/download"
 }
 
-if ($CompFolder -match "amer" )
+if ($CompFolder -match "company_1" )
 {
-    $QDL = "https://www.amer.it/download"
+    $QDL = "https://www.company_1.it/download"
 }
 
-if ($CompFolder -match "antamatic" )
+if ($CompFolder -match "company_5" )
 {
-    $QDL = "https://www.amer.it/download"
+    $QDL = "https://www.company_1.it/download"
 }
 
-if ($CompFolder -match "bus" )
+if ($CompFolder -match "company_6" )
 {
-    $QDL = "https://www.amer.it/download"
+    $QDL = "https://www.company_1.it/download"
 }
 
-if ($CompFolder -match "italsea" )
+if ($CompFolder -match "company_3" )
 {
-    $QDL = "https://www.amer.it/download"
+    $QDL = "https://www.company_1.it/download"
 }
 
-if ($CompFolder -match "nsm-india" )
+if ($CompFolder -match "company_7" )
 {
-    $QDL = "https://www.amer.it/download"
+    $QDL = "https://www.company_1.it/download"
 }
 
-if ($CompFolder -match "sir" )
+if ($CompFolder -match "company_2" )
 {
-    $QDL = "https://www.amer.it/download"
+    $QDL = "https://www.company_1.it/download"
 }
 
-if ($CompFolder -match "schumo" )
+if ($CompFolder -match "company_8" )
 {
-    $QDL = "https://www.amer.it/download"
+    $QDL = "https://www.company_1.it/download"
 }
 
-if ($CompFolder -match "nsm" )
+if ($CompFolder -match "company_9" )
 {
-    $QDL = "https://www.amer.it/download"
+    $QDL = "https://www.company_1.it/download"
 }
 
 
@@ -302,7 +302,7 @@ write-host "$AppSignatures\$CompFolder$function $ROAMING_undercase.$Ext"
 if ($area -match "com" )
 {
 
-$PathSignatureTemplates = "\\corp.amergroup.it\svc\group\app_deploy_group\M365\Signatures\_TermsCond\$CompFolder"
+$PathSignatureTemplates = "\\corp.companygroup.it\svc\group\app_deploy_group\M365\Signatures\_TermsCond\$CompFolder"
 
 ####################################RUN SCRIPT TERMS AND CONFITION
 
@@ -396,12 +396,12 @@ if (-not(Test-Path -Path $Editable -PathType Leaf)) {
 
 $Company = $ADCompany
 $function = "Z-Editabile"
-$PathSignatureTemplates = "\\corp.amergroup.it\svc\group\app_deploy_group\M365\Signatures\$CompFolder"
+$PathSignatureTemplates = "\\corp.companygroup.it\svc\group\app_deploy_group\M365\Signatures\$CompFolder"
 
-$URL_lower = "https://signatures.amergroup.it/lower-banner/$CompFolder.png"
-$URL_mid = "https://signatures.amergroup.it/fixed/pixel.png"
-$URL_upper = "https://signatures.amergroup.it/fixed/pixel.png"
-$URL_last = "https://signatures.amergroup.it/fixed/pixel.png"
+$URL_lower = "https://signatures.companygroup.it/lower-banner/$CompFolder.png"
+$URL_mid = "https://signatures.companygroup.it/fixed/pixel.png"
+$URL_upper = "https://signatures.companygroup.it/fixed/pixel.png"
+$URL_last = "https://signatures.companygroup.it/fixed/pixel.png"
 
 New-Item -Path "$PathSignature\$User" -ItemType Container –Force
 
